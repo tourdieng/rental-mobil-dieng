@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontak & Pemesanan | Rental Mobil Dieng</title>
+  <meta name="description" content="Form pemesanan rental mobil ke Dieng. Isi data & konsultasi, kirim ke WhatsApp secara otomatis.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://namadomainmu.com/rental-mobil-dieng/kontak.html">
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f8fd;
+      color: #19335a;
+    }
+    .header { background: #4285f4; color: #fff; padding: 14px 0; box-shadow: 0 2px 8px #19335a0a; }
+    .header-wrap { max-width: 800px; margin: auto; display: flex; align-items: center; gap: 10px; justify-content: space-between; }
+    .header-left { display: flex; align-items: center; gap: 10px; }
+    .header-logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .header-logo svg { vertical-align: middle; }
+    .header-title { font-size: 1.45rem; font-weight: 600; letter-spacing: .5px; color: #fff; }
+    .header-menu { margin-left: auto; }
+    .header-link { color: #fff; text-decoration: none; font-size: 1.05rem; font-weight: 500; padding: 7px 20px; border-radius: 1.5rem; background: rgba(255,255,255,0.10); transition: background .16s;}
+    .header-link:hover { background: rgba(255,255,255,0.24);}
+    /* FORM */
+    .kontak-outer {
+      width: 100vw;
+      min-height: 92vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .kontak-wrap {
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 3px 20px #19335a13;
+      margin: 40px 0 34px 0;
+      padding: 26px 22px 24px 22px;
+      width: 100%;
+      max-width: 370px;
+      display: flex;
+      flex-direction: column;
+    }
+    .kontak-title { font-size: 1.17rem; font-weight: 700; margin-bottom: 7px;}
+    .kontak-desc { color: #4a6285; font-size: .97rem; margin-bottom: 17px;}
+    .form-row { margin-bottom: 13px;}
+    .form-label { display: block; font-weight: 500; margin-bottom: 4px; color: #334; font-size: .98rem;}
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      font-size: 1rem;
+      border: 1.1px solid #e6e8ed;
+      border-radius: .45rem;
+      padding: 9px 11px;
+      outline: none;
+      background: #f7fafd;
+      color: #243;
+      box-sizing: border-box;
+      transition: border .15s;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: #4285f4; background: #fff; }
+    .form-textarea { min-height: 44px; }
+    .form-buton { margin-top: 16px;}
+    .wa-btn {
+      background: #25d366; color: #fff; border: none; border-radius: .8rem; font-size: 1.06rem; font-weight: 600;
+      padding: 12px 0; width: 100%; cursor: pointer; box-shadow: 0 2px 9px #25d36618; transition: background .13s; display: block;
+    }
+    .wa-btn:hover { background: #128c7e;}
+    /* FOOTER */
+    .footer { margin-top:48px; background: #f5f6fa; border-top: 1.5px solid #e0e6f1; padding: 28px 0 16px; }
+    .footer-wrap { max-width: 800px; margin: auto; text-align: center; }
+    .footer-logo svg { vertical-align: middle; }
+    .footer-title { font-size: 1.08rem; color: #19335a; font-weight: 600; margin-left: 7px;}
+    .footer-info { margin: 12px 0 6px; color: #678; font-size: .96rem;}
+    .footer-copy { color: #99a; font-size: .92rem;}
+    @media (max-width: 600px) {
+      .header-wrap, .footer-wrap { padding: 0 4vw; }
+      .kontak-outer { min-height: 80vh; }
+      .kontak-wrap { max-width: 99vw; border-radius: .75rem; padding: 6vw 4vw 7vw 4vw; margin: 24px 0 16px 0;}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-wrap">
+      <span class="header-left">
+        <a href="/rental-mobil-dieng/" class="header-logo-link">
+          <span class="header-logo">
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#fff" opacity="0.12"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#fff"/><circle cx="18" cy="16" r="1.5" fill="#fbbc05"/></svg>
+          </span>
+          <span class="header-title">Rental Mobil Dieng</span>
+        </a>
+      </span>
+      <nav class="header-menu">
+        <a href="/rental-mobil-dieng/kontak.html" class="header-link">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="kontak-outer">
+      <div class="kontak-wrap">
+        <div class="kontak-title">Kontak & Pemesanan</div>
+        <div class="kontak-desc">
+          Isi data berikut lalu klik <b>Kirim ke WhatsApp</b>.<br>
+          Admin siap membantu konsultasi & booking rental mobil ke Dieng.
+        </div>
+        <form id="waForm" autocomplete="off">
+          <div class="form-row">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-input" id="nama" name="nama" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label class="form-label">Kota Keberangkatan</label>
+            <select class="form-select" id="kota" name="kota" required>
+              <option value="">Pilih Kota...</option>
+              <option>Wonosobo</option>
+              <option>Jogja</option>
+              <option>Semarang</option>
+              <option>Purwokerto</option>
+              <option>Solo</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label">Tujuan/Drop-off</label>
+            <input type="text" class="form-input" id="tujuan" name="tujuan" placeholder="Misal: Dieng, Sikunir, hotel tertentu" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label">Tanggal Berangkat</label>
+            <input type="date" class="form-input" id="tanggal" name="tanggal" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label">Catatan (opsional)</label>
+            <textarea class="form-textarea" id="catatan" name="catatan" placeholder="Jumlah peserta, request khusus, dll"></textarea>
+          </div>
+          <div class="form-buton">
+            <button type="submit" class="wa-btn">Kirim ke WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <span class="footer-logo">
+        <svg width="23" height="23" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#4285f4" opacity="0.14"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#4285f4"/><circle cx="18" cy="16" r="1.5" fill="#fbbc05"/></svg>
+      </span>
+      <span class="footer-title">Rental Mobil Dieng</span>
+      <div class="footer-info">Sewa mobil ke Dieng dari Wonosobo, Jogja, Semarang, Purwokerto, dan Solo. Mobil include driver & BBM.</div>
+      <div class="footer-copy">© 2025 Rental Mobil Dieng. All rights reserved.</div>
+    </div>
+  </footer>
+
+<!-- WhatsApp Logic & tanggal validasi -->
+<script>
+  // No WA split +62, anti crawl
+  const wa_part1 = "62";
+  const wa_part2 = "811";
+  const wa_part3 = "2828";
+  const wa_part4 = "283";
+  const waNumber = wa_part1 + wa_part2 + wa_part3 + wa_part4;
+
+  // Set min date ke hari ini (prevent pilih kemarin)
+  document.addEventListener('DOMContentLoaded', function() {
+    var today = new Date();
+    var d = today.getDate();
+    var m = today.getMonth() + 1;
+    var y = today.getFullYear();
+    if(d<10) d='0'+d;
+    if(m<10) m='0'+m;
+    var minDate = y + '-' + m + '-' + d;
+    document.getElementById('tanggal').setAttribute('min', minDate);
+  });
+
+  document.getElementById('waForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nama = document.getElementById('nama').value.trim();
+    const kota = document.getElementById('kota').value.trim();
+    const tujuan = document.getElementById('tujuan').value.trim();
+    const tanggal = document.getElementById('tanggal').value.trim();
+    const catatan = document.getElementById('catatan').value.trim();
+
+    let pesan = `Halo admin Rental Mobil Dieng,%0ASaya ingin booking rental:%0A`;
+    pesan += `Nama: ${nama}%0A`;
+    pesan += `Kota Keberangkatan: ${kota}%0A`;
+    pesan += `Tujuan: ${tujuan}%0A`;
+    pesan += `Tanggal: ${tanggal}%0A`;
+    if(catatan) pesan += `Catatan: ${catatan}%0A`;
+    pesan += `%0ATerima kasih.`;
+
+    const url = `https://wa.me/${waNumber}?text=${pesan}`;
+    window.open(url, '_blank');
+  });
+</script>
+</body>
+</html>
